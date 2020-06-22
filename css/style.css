@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, #ccc);
+}
+
+.container {
+  height: 410px;
+  width: 550px;
+  border-radius: 10px;
+  background-color: #9DD2EA;
+  margin: 100px auto;
+  padding: 20px;
+  box-shadow: 0px 4px 0px 0px #009de4;
+  position: relative;
+}
+
+#score {
+  background-color: #f1ff92;
+  padding: 11px;
+  color: #888E5f;
+  position: absolute;
+  right: 20px;
+  box-shadow: 0px 4px 0px 0px #9da853;
+}
+
+#correct {
+  padding: 11px;
+  position: absolute;
+  background-color: #42e252;
+  color: white;
+  left: 260px;
+  visibility: hidden;
+}
+
+#wrong {
+  padding: 11px;
+  position: absolute;
+  background-color: #de401a;
+  color: white;
+  left: 260px;
+  visibility: hidden;
+}
+
+#question {
+  width: 450px;
+  height: 150px;
+  margin: 50px auto 10px auto;
+  background-color: #9DA0EA;
+  box-shadow: 0px 4px 0px 0px #535aa8;
+  text-align: center;
+  font-size: 6.50rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+#instruction {
+  height: 50px;
+  width: 450px;
+  background-color: #B481D9;
+  margin: 10px auto;
+  line-height: 2.8125rem;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0px 4px 0px 0px #8153a8;
+  font-family: 'Dancing Script', cursive;
+}
+
+#choices {
+  width: 450px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.box {
+  width: 85px;
+  height: 85px;
+  background-color: white;
+  float: left;
+  margin-right: 36px;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'Dancing Script', cursive;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.box:hover, #start-reset:hover {
+  background-color: #9DA0EA;
+  color: white;
+  box-shadow: 0px 4px 0px 0px #6b54d3;
+}
+
+.box:active, #start-reset:active {
+  box-shadow: 0px 0px 0px 0px #6b54d3;
+  top: 4px;
+}
+
+#box4 {
+  margin-right: 0;
+}
+
+#start-reset {
+  width: 85px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 225px;
+  padding: 7px 4px;
+  margin-right: 36px;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#time-remaining {
+  width: 160px;
+  padding: 10px;
+  top: 394px;
+  color: white;
+  position: absolute;
+  background-color: rgb(15, 77, 192);
+  left: 385px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'Dancing Script', cursive;
+visibility: hidden;
+}
+
+#game-over {
+  width: 500px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(#F3CA6B, #F3706C);
+  position: absolute;
+  bottom: 160px;
+  left: 40px;
+  z-index: 2;
+  visibility:hidden;
+  line-height: 1.5rem;
+  font-size: 3rem;
+}
